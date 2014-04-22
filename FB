@@ -26,6 +26,17 @@ form:
                     required
                     form
                     autofocus
+    example:
+    <form action="demo_form.asp" method="get">
+    <input list="vgcompanies" name="browser">
+    <datalist id="vgcompanies">
+      <option value="Sony">
+      <option value="Microsoft">
+      <option value="Nintendo">
+      <option value="Sega">
+      <option value="Valve">
+    <input type="submit">
+    </form>
                     
 audio:
     <audio controls>
