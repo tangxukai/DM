@@ -27,6 +27,18 @@ form:
                     form
                     autofocus
                     
+audio:
+    <audio controls>
+    <source src="jamshed.mp3" type="audio/mpeg">
+    Your browser does'nt support audio embedding feature.
+    </audio>
+    
+video:
+    <video width="450" height="340" controls>
+    <source src="jamshed.mp4" type="video/mp4">
+    Your browser does'nt support video embedding feature.
+    </video>
+                    
 JS: use inspect in IE
 class design:
     function Person(gender){
