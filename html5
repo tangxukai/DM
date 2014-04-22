@@ -1,0 +1,18 @@
+localStorage example:
+
+      localStorage.lastname="Xiu";
+      document.getElementById("result").innerHTML="Last name: "
+      + localStorage.lastname;
+
+sessionStorage example:
+
+      if (sessionStorage.clickcount)
+        {
+        sessionStorage.clickcount=Number(sessionStorage.clickcount)+1;
+        }
+      else
+        {
+        sessionStorage.clickcount=1;
+        }
+      document.getElementById("result").innerHTML="The user has clicked the button " + sessionStorage.clickcount + " time(s) during this session.";
+
