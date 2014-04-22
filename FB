@@ -1,0 +1,71 @@
+HTML5:
+canvas:
+    <canvas id="mycanvas" width="200" height="100" style="border: 1px solid #000000;"></canvas>
+    <script> var c = document.getElementById("mycanvas");
+             var ctx = c.getContext("2d");
+             ctx.fillStyle = "#FF0000";
+             ctx.fillRect(0,0,150,175);
+    </script>
+    
+svg:
+    <svg width="100" height="100">
+    <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow"/>
+    </circle>
+    </svg>
+    
+form:
+    datalist
+    keygen
+    attribute like: autocomplete("on/off");
+                    list
+                    min
+                    max
+                    multiple
+                    pattern
+                    placeholder
+                    required
+                    form
+                    autofocus
+                    
+JS: use inspect in IE
+class design:
+    function Person(gender){
+      this.gender = gender;
+    }
+    Person.prototype.gender="";
+    Person.prototype.sayHello=function(){alter("hello);};
+initialize:
+    var person1 = new Person('Male');
+    
+PHP:
+set cookie:
+    setcookie("username2","Barney Rubble",time()+3600);
+view cookie:
+    $_COOKIE["username2"];
+php&mysql:
+    $link = mysql_connect($host,$user,$password);
+    mysql_select_db($database);
+    $query = "select * from $table";
+    $result = mysql_query($query);
+    $row = mysql_fetch_array($result);
+    foreach($arr as $item){}
+    foreach($arr as $key=>$value){}
+    
+SQL:
+    select Employees.LastName, count(Orders.OrderID) AS numberofOrders
+    from(Orders inner join Employees on Orders.EmployeeId = Employees.EmployeeId)
+    group by LastName
+    having count(Orders.OrderID) > 10;
+    
+C#:
+    singleton:
+    public class singletonExample{
+      private static singletonExample _Instance;
+      private singletonExample(){}
+      public static singletonExample getInstance(){
+        if(_Instance == null){
+          _Instance = new singletonExample();
+        }
+        return _Instance;
+      }
+    }
